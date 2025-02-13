@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var numberOutput: Int = 0
-    @State private var userCorrect = false
     @State private var rightAnswers: Int = 0
     @State private var wrongAnswers: Int = 0
     
@@ -25,7 +24,11 @@ struct ContentView: View {
     }
 }
 
-
+extension Int {
+    static var randomNumber1To100: Int {
+        return Int.random(in: 1..<101)
+    }
+}
 
 
 
