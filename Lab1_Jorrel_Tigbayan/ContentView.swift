@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
+    let timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
+    
     @State private var numberOutput: Int = 0
     @State private var rightAnswers: Int = 0
     @State private var wrongAnswers: Int = 0
