@@ -21,6 +21,7 @@ struct ContentView: View {
                 .onReceive(timer) { time in
                 self.numberOutput = Int.randomNumber1To100
             }
+                .font(.system(size: 50))
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
