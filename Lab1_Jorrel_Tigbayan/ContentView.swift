@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var numberOutput: Int = 0
+    @State private var userCorrect = false
     
     var body: some View {
         VStack {
