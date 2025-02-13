@@ -22,9 +22,23 @@ struct ContentView: View {
                 self.numberOutput = Int.randomNumber1To100
             }
                 .font(.system(size: 50))
+                .padding()
+            Button(action: {
+                //code
+            }, label: {
+                Text("Prime")
+            })
+                .padding()
+            Button(action: {
+                //code
+            }, label: {
+                Text("Not Prime")
+            })
+                .padding()
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
+                .padding()
         }
         .padding()
     }
