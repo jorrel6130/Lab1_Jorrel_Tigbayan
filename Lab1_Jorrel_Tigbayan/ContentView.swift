@@ -11,6 +11,8 @@ struct ContentView: View {
     
     @State private var numberOutput: Int = 0
     @State private var userCorrect = false
+    @State private var rightAnswers: Int = 0
+    @State private var wrongAnswers: Int = 0
     
     var body: some View {
         VStack {
