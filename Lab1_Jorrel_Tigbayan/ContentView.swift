@@ -26,13 +26,27 @@ struct ContentView: View {
                 .font(.system(size: 50))
                 .padding()
             Button(action: {
-                //code
+                if (isPrime(numberOutput) == true) {
+                    rightAnswers += 1
+                } else {
+                    wrongAnswers += 1
+                }
+                timer = Timer.publish(every: 5, on: .main, in: .common)
+                    .autoconnect()
+                    .prepend(.now)
             }, label: {
                 Text("Prime")
             })
                 .padding()
             Button(action: {
-                //code
+                if (isPrime(numberOutput) == false) {
+                    rightAnswers += 1
+                } else {
+                    wrongAnswers += 1
+                }
+                timer = Timer.publish(every: 5, on: .main, in: .common)
+                    .autoconnect()
+                    .prepend(.now)
             }, label: {
                 Text("Not Prime")
             })
@@ -43,6 +57,28 @@ struct ContentView: View {
                 .padding()
         }
         .padding()
+    }
+    
+    func isPrime(_ number: Int) -> Bool {
+        if number <= 1 {
+            return false
+        }
+
+        if number <= 3 {
+            return true
+        }
+
+        var i = 2
+
+        while i * i <= number {
+            if number % i == 0 {
+                return false
+            }
+
+            i += 1
+        }
+
+        return true;
     }
 }
 
