@@ -17,10 +17,13 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            Text("\(numberOutput)")
+                .onReceive(timer) { time in
+                self.numberOutput = Int.randomNumber1To100
+            }
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
         }
         .padding()
     }
