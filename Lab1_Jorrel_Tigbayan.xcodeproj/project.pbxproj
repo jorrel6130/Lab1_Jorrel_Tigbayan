@@ -21,6 +21,7 @@
 		5213A8D12D5E9C6E00665C54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5213A8D42D5E9C6E00665C54 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5223C4392D5EE4DF00F1BA34 /* AnandaBlackPersonalUseRegular-rg9Rx.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AnandaBlackPersonalUseRegular-rg9Rx.ttf"; sourceTree = "<group>"; };
+		5223C43B2D5EE62700F1BA34 /* Lab1-Jorrel-Tigbayan-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Lab1-Jorrel-Tigbayan-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +54,7 @@
 		5213A8CC2D5E9C6B00665C54 /* Lab1_Jorrel_Tigbayan */ = {
 			isa = PBXGroup;
 			children = (
+				5223C43B2D5EE62700F1BA34 /* Lab1-Jorrel-Tigbayan-Info.plist */,
 				5223C4392D5EE4DF00F1BA34 /* AnandaBlackPersonalUseRegular-rg9Rx.ttf */,
 				5213A8CD2D5E9C6B00665C54 /* Lab1_Jorrel_TigbayanApp.swift */,
 				5213A8CF2D5E9C6B00665C54 /* ContentView.swift */,
@@ -274,6 +276,7 @@
 				DEVELOPMENT_TEAM = 3D6UVHL9Y5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Lab1-Jorrel-Tigbayan-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -303,6 +306,7 @@
 				DEVELOPMENT_TEAM = 3D6UVHL9Y5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Lab1-Jorrel-Tigbayan-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
