@@ -19,6 +19,7 @@ struct ContentView: View {
     @State private var attemptCount: Int = 0
     @State private var asset: String = ""
     @State private var showAlert = false
+    @State private var totalAnswers: Int = 0
     
     var body: some View {
         VStack {
@@ -82,6 +83,15 @@ struct ContentView: View {
                         .fit)
                 .frame(width: 80)
                 .padding()
+            VStack {
+                HStack {
+                    Text("\(totalAnswers)")
+                        .onReceive(timer) { time in
+                        self.totalAnswers = rightAnswers + wrongAnswers
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                }
+            }
         }
         .padding()
     }
