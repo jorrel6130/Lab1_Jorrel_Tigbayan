@@ -90,6 +90,7 @@ struct ContentView: View {
                         .onReceive(timer) { time in
                         self.totalAnswers = rightAnswers + wrongAnswers
                         }
+                        .foregroundColor(.red)
                         .frame(maxWidth: .infinity, alignment: .leading)
                 }
             }
