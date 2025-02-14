@@ -16,6 +16,9 @@ struct ContentView: View {
     @State private var numberOutput: Int = 0
     @State private var rightAnswers: Int = 0
     @State private var wrongAnswers: Int = 0
+    @State private var attemptCount: Int = 0
+    @State private var asset: String = ""
+    @State private var showAlert = false
     
     var body: some View {
         VStack {
@@ -28,8 +31,15 @@ struct ContentView: View {
             Button(action: {
                 if (isPrime(numberOutput) == true) {
                     rightAnswers += 1
+                    self.asset = "check_icon"
                 } else {
                     wrongAnswers += 1
+                    self.asset = "cross_icon"
+                }
+                attemptCount += 1
+                if (attemptCount == 10) {
+                    showAlert = true
+                    self.attemptCount = 0
                 }
                 timer = Timer.publish(every: 5, on: .main, in: .common)
                     .autoconnect()
@@ -37,12 +47,23 @@ struct ContentView: View {
             }, label: {
                 Text("Prime")
             })
+                .font(.system(size: 50))
                 .padding()
+                .alert("Right answers: \(rightAnswers)\nWrong answers: \(wrongAnswers)", isPresented: $showAlert) {
+                    Button("OK") {}
+                }
             Button(action: {
                 if (isPrime(numberOutput) == false) {
                     rightAnswers += 1
+                    self.asset = "check_icon"
                 } else {
                     wrongAnswers += 1
+                    self.asset = "cross_icon"
+                }
+                attemptCount += 1
+                if (attemptCount == 10) {
+                    showAlert = true
+                    self.attemptCount = 0
                 }
                 timer = Timer.publish(every: 5, on: .main, in: .common)
                     .autoconnect()
@@ -50,10 +71,16 @@ struct ContentView: View {
             }, label: {
                 Text("Not Prime")
             })
+                .font(.system(size: 50))
                 .padding()
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
+                .alert("Right answers: \(rightAnswers)\nWrong answers: \(wrongAnswers)", isPresented: $showAlert) {
+                    Button("OK") {}
+                }
+            Image(asset)
+                .resizable()
+                .aspectRatio(contentMode:
+                        .fit)
+                .frame(width: 80)
                 .padding()
         }
         .padding()
