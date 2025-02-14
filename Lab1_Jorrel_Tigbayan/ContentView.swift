@@ -49,7 +49,7 @@ struct ContentView: View {
             }, label: {
                 Text("Prime")
             })
-                .font(.system(size: 50))
+                .font(Font.custom("AnandaBlackPersonalUse-Regular", size: 50))
                 .padding()
                 .alert("Right answers: \(rightAnswers)\nWrong answers: \(wrongAnswers)", isPresented: $showAlert) {
                     Button("OK") {}
@@ -73,7 +73,7 @@ struct ContentView: View {
             }, label: {
                 Text("Not Prime")
             })
-                .font(.system(size: 50))
+                .font(Font.custom("AnandaBlackPersonalUse-Regular", size: 50))
                 .padding()
                 .alert("Right answers: \(rightAnswers)\nWrong answers: \(wrongAnswers)", isPresented: $showAlert) {
                     Button("OK") {}

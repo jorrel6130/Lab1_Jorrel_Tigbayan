@@ -11,7 +11,7 @@
 		5213A8D02D5E9C6B00665C54 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5213A8CF2D5E9C6B00665C54 /* ContentView.swift */; };
 		5213A8D22D5E9C6E00665C54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5213A8D12D5E9C6E00665C54 /* Assets.xcassets */; };
 		5213A8D52D5E9C6E00665C54 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5213A8D42D5E9C6E00665C54 /* Preview Assets.xcassets */; };
-		5223C43A2D5EE4DF00F1BA34 /* AnandaBlackPersonalUseRegular-rg9Rx.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5223C4392D5EE4DF00F1BA34 /* AnandaBlackPersonalUseRegular-rg9Rx.ttf */; };
+		5223C4412D5EEA3F00F1BA34 /* AnandaBlackPersonalUseRegular-rg9Rx.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5223C4402D5EEA3F00F1BA34 /* AnandaBlackPersonalUseRegular-rg9Rx.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,8 +20,8 @@
 		5213A8CF2D5E9C6B00665C54 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5213A8D12D5E9C6E00665C54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5213A8D42D5E9C6E00665C54 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5223C4392D5EE4DF00F1BA34 /* AnandaBlackPersonalUseRegular-rg9Rx.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AnandaBlackPersonalUseRegular-rg9Rx.ttf"; sourceTree = "<group>"; };
 		5223C43B2D5EE62700F1BA34 /* Lab1-Jorrel-Tigbayan-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Lab1-Jorrel-Tigbayan-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5223C4402D5EEA3F00F1BA34 /* AnandaBlackPersonalUseRegular-rg9Rx.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AnandaBlackPersonalUseRegular-rg9Rx.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +54,8 @@
 		5213A8CC2D5E9C6B00665C54 /* Lab1_Jorrel_Tigbayan */ = {
 			isa = PBXGroup;
 			children = (
+				5223C4402D5EEA3F00F1BA34 /* AnandaBlackPersonalUseRegular-rg9Rx.ttf */,
 				5223C43B2D5EE62700F1BA34 /* Lab1-Jorrel-Tigbayan-Info.plist */,
-				5223C4392D5EE4DF00F1BA34 /* AnandaBlackPersonalUseRegular-rg9Rx.ttf */,
 				5213A8CD2D5E9C6B00665C54 /* Lab1_Jorrel_TigbayanApp.swift */,
 				5213A8CF2D5E9C6B00665C54 /* ContentView.swift */,
 				5213A8D12D5E9C6E00665C54 /* Assets.xcassets */,
@@ -130,7 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5223C43A2D5EE4DF00F1BA34 /* AnandaBlackPersonalUseRegular-rg9Rx.ttf in Resources */,
+				5223C4412D5EEA3F00F1BA34 /* AnandaBlackPersonalUseRegular-rg9Rx.ttf in Resources */,
 				5213A8D52D5E9C6E00665C54 /* Preview Assets.xcassets in Resources */,
 				5213A8D22D5E9C6E00665C54 /* Assets.xcassets in Resources */,
 			);
