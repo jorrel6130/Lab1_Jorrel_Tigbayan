@@ -29,6 +29,7 @@ struct ContentView: View {
             }
                 .font(.system(size: 50))
                 .padding()
+                .foregroundColor(.blue)
             Button(action: {
                 if (isPrime(numberOutput) == true) {
                     rightAnswers += 1
